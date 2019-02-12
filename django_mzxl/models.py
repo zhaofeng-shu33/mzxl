@@ -2,7 +2,7 @@ from django.db import models
 class Account(models.Model):
     name = models.CharField(max_length=20)
     wechat_id = models.CharField(max_length=10)
-    introduction = models.CharField(max_length=100)
+    introduction = models.CharField(max_length=200)
     last_updated = models.DateField()
 class Article(models.Model):
     title = models.CharField(max_length=125)
